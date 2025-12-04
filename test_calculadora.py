@@ -17,3 +17,6 @@ def test_divide_normal(calc):
 def test_divide_por_cero(calc):
     with pytest.raises(ValueError):
         calc.divide(10, 0)
+
+if __name__ == "__main__":
+    pytest.main(["-q"])
